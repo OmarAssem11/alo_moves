@@ -1,8 +1,7 @@
 class HostConstants {
-  static const String chargerControlBaseUrl = '/';
-  static const String chargingStationsBaseUrl = '/';
+  static const String baseUrl = '/';
 
-  static const String requestChargingSessionEndpoint = 'session/activate';
+  static const String requestChargingSessionEndpoint = '';
 }
 
 class CacheConstants {

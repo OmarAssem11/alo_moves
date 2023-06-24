@@ -1,5 +1,5 @@
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:alo_moves/ui/resources/theme_manager.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void showToast(String message) => Fluttertoast.showToast(
       msg: message,

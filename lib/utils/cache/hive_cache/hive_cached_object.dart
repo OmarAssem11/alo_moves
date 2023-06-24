@@ -1,6 +1,6 @@
-import 'package:hive/hive.dart';
 import 'package:alo_moves/utils/cache/cache_service.dart';
 import 'package:alo_moves/utils/constants.dart';
+import 'package:hive/hive.dart';
 
 part 'hive_cached_object.g.dart';
 

@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:alo_moves/generated/l10n.dart';
 import 'package:alo_moves/ui/resources/values_manager.dart';
+import 'package:flutter/material.dart';
 
 class ErrorIndicator extends StatelessWidget {
   const ErrorIndicator();

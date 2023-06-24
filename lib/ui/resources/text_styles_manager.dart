@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:alo_moves/ui/resources/theme_manager.dart';
+import 'package:flutter/material.dart';
 
 class FontSize {
   static const double s12 = 12.0;

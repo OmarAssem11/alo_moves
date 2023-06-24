@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:alo_moves/ui/resources/text_styles_manager.dart';
 import 'package:alo_moves/ui/resources/values_manager.dart';
+import 'package:flutter/material.dart';
 
 class ColorPalette {
-  static const Color primary = Colors.amber;
+  static const Color primary = Colors.black;
   static const Color screenBackground = Color(0xFFFFFFFF);
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
@@ -35,25 +35,6 @@ ThemeData getTheme() => ThemeData(
           size: Sizes.s28,
         ),
       ),
-      inputDecorationTheme: InputDecorationTheme(
-        hintStyle: getLightTextStyle(fontSize: FontSize.s16),
-        enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: ColorPalette.grey, width: Sizes.s2),
-          borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: ColorPalette.grey, width: Sizes.s2),
-          borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
-        ),
-        errorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: ColorPalette.red, width: Sizes.s2),
-          borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
-        ),
-        focusedErrorBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: ColorPalette.red, width: Sizes.s2),
-          borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
-        ),
-      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           textStyle: getBoldTextStyle(
@@ -65,34 +46,6 @@ ThemeData getTheme() => ThemeData(
             borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
           ),
         ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          textStyle: getBoldTextStyle(
-            fontSize: FontSize.s18,
-          ),
-          foregroundColor: ColorPalette.primary,
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(Sizes.s8)),
-          ),
-          side: const BorderSide(color: ColorPalette.primary, width: Sizes.s2),
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          textStyle: getBoldTextStyle(
-            fontSize: FontSize.s14,
-          ),
-          foregroundColor: ColorPalette.primary,
-        ),
-      ),
-      dividerTheme: const DividerThemeData(
-        color: ColorPalette.grey,
-        thickness: Sizes.s_8,
-      ),
-      listTileTheme: const ListTileThemeData(iconColor: ColorPalette.grey),
-      radioTheme: const RadioThemeData(
-        fillColor: MaterialStatePropertyAll(ColorPalette.primary),
       ),
       textTheme: TextTheme(
         displaySmall: getRegularTextStyle(fontSize: FontSize.s36),

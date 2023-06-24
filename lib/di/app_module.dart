@@ -1,8 +1,8 @@
+import 'package:alo_moves/utils/cache/hive_cache/hive_cached_object.dart';
+import 'package:alo_moves/utils/constants.dart';
 import 'package:dio/dio.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:injectable/injectable.dart';
-import 'package:alo_moves/utils/cache/hive_cache/hive_cached_object.dart';
-import 'package:alo_moves/utils/constants.dart';
 
 @module
 abstract class AppModule {
@@ -11,6 +11,7 @@ abstract class AppModule {
     final dio = Dio();
     dio.options = BaseOptions(
       receiveDataWhenStatusError: true,
+      baseUrl: HostConstants.baseUrl,
     );
     return dio;
   }

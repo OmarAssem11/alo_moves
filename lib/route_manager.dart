@@ -1,5 +1,5 @@
-import 'package:go_router/go_router.dart';
 import 'package:alo_moves/features/training_series/presentation/screens/training_series_screen.dart';
+import 'package:go_router/go_router.dart';
 
 class Routes {
   static const String trainingSeries = '/';

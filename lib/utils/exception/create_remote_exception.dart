@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:dio/dio.dart';
 import 'package:alo_moves/utils/exception/app_exception.dart';
+import 'package:dio/dio.dart';
 
 RemoteException createRemoteException(Object exception) {
   if (exception is DioException) {
