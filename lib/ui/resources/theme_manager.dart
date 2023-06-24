@@ -21,12 +21,6 @@ ThemeData getTheme() => ThemeData(
         foregroundColor: ColorPalette.black,
         elevation: Sizes.s4,
         centerTitle: true,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-            bottomRight: Radius.circular(Sizes.s16),
-            bottomLeft: Radius.circular(Sizes.s16),
-          ),
-        ),
         titleTextStyle: getBoldTextStyle(
           fontSize: FontSize.s20,
         ),
