@@ -9,8 +9,33 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/training_series_classes.json
+  String get trainingSeriesClasses =>
+      'assets/json/training_series_classes.json';
+
+  /// File path: assets/json/training_series_community_social_posts.json
+  String get trainingSeriesCommunitySocialPosts =>
+      'assets/json/training_series_community_social_posts.json';
+
+  /// File path: assets/json/training_series_overview.json
+  String get trainingSeriesOverview =>
+      'assets/json/training_series_overview.json';
+
+  /// List of all assets
+  List<String> get values => [
+        trainingSeriesClasses,
+        trainingSeriesCommunitySocialPosts,
+        trainingSeriesOverview
+      ];
+}
+
 class Assets {
   Assets._();
+
+  static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
 class AssetGenImage {
